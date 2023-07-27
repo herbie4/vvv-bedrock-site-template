@@ -97,6 +97,7 @@ initial_env() {
     noroot cp "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/.env.example" "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/.env"
   fi
   echo " * Setting up .env"
+  noroot sed -i "s/# DB_PREFIX='wp_'/DB_PREFIX='${DB_PREFIX}'/g" "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/.env"
   noroot sed -i "s/DB_NAME='database_name'/DB_NAME='${DB_NAME}'/g" "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/.env"
   noroot sed -i "s/DB_USER='database_user'/DB_USER='wp'/g" "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/.env"
   noroot sed -i "s/DB_PASSWORD='database_password'/DB_PASSWORD='wp'/g" "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/.env"
