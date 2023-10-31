@@ -11,7 +11,7 @@ DB_PREFIX=$(get_config_value 'db_prefix' 'wp_')
 DOMAIN=$(get_primary_host "${VVV_SITE_NAME}".test)
 PUBLIC_DIR=$(get_config_value 'public_dir' "public_html")
 SITE_TITLE=$(get_config_value 'site_title' "${DOMAIN}")
-WP_LOCALE=$(get_config_value 'locale' 'en_US')
+WP_LOCALE=$(get_config_value 'locale' 'nl_NL')
 WP_TYPE=$(get_config_value 'wp_type' "single")
 WP_VERSION=$(get_config_value 'wp_version' 'latest')
 
