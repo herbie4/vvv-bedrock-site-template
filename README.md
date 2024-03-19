@@ -9,7 +9,7 @@
 
 ```
 project-name:
-  repo: https://github.com/fiwa/vvv-bedrock-site-template.git
+  repo: https://github.com/herbie4/vvv-bedrock-site-template.git
   hosts:
     - project-name
 ```
